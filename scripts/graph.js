@@ -1,0 +1,21 @@
+var network = new graphlib.Graph();
+
+network.setNode(0, {x: 50, y: 100})
+network.setNode(1, {x: 100, y: 100})
+network.setNode(2, {x: 100, y: 150})
+network.setNode(3, {x: 150, y: 100})
+network.setNode(4, {x: 150, y: 150})
+network.setNode(5, {x: 200, y: 100})
+network.setNode(6, {x: 200, y: 150})
+network.setNode(7, {x: 250, y: 100})
+network.setNode(8, {x: 350, y: 150})
+
+network.setEdge(0, 1)
+network.setEdge(1, 2)
+network.setEdge(1, 3)
+network.setEdge(2, 4)
+network.setEdge(3, 4)
+network.setEdge(3, 5)
+network.setEdge(5, 6)
+network.setEdge(5, 7)
+network.setEdge(7,8)
